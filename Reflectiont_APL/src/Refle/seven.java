@@ -16,7 +16,7 @@ public class seven {
 			 
 			 Constructor<?>con1=cl.getDeclaredConstructor(String.class);
 			 con1.setAccessible(true);
-			    Student s1=(Student)con1.newInstance("dfghjk");
+			    Student s1=(Student)con1.newInstance("field");
 			    
 			    Field f1=cl.getDeclaredField("name");
 			    f1.setAccessible(true);

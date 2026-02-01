@@ -1,5 +1,6 @@
 package Refle;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 
 public class five {
@@ -7,14 +8,12 @@ public class five {
 	public static void main(String[] args) throws ClassNotFoundException, NoSuchFieldException, SecurityException {
 		    //      Class<?> cs=Bmw.class;
 		     
-		  Class <?> cl=Class.forName("Refle.Bmw  ");
-		
-		  Field[]  Fields = cl.getDeclaredFields();
+		  Class <?> cl=Class.forName("Refle.Bmw");
 		  
-		  for(Field f:Fields) {
-			  System.out.println(Fields);
-			  
-		  }
+		  Constructor<?>[]con=cl.getDeclaredConstructors();
+		   for(Constructor c:con) {
+			   System.out.println(c);
+		   }
 	}
 
 }
