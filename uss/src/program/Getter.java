@@ -4,16 +4,13 @@ public class Getter {
 	
 	  private int age;
 	      
-
 	public int getAge() {
 		return age;
 	}
 
-
 	  public void setAge(int age) {
 		  this.age = 25;
 	  }
-
 
 	public static void main(String[] args) {
 
