@@ -17,6 +17,8 @@ public class second {
 	Future <?>f =  ex.submit(c1);
 	 
 	 System.out.println(f.get());
+	 
+	 ex.shutdown();
 	}
 
 }
